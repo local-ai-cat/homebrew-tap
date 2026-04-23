@@ -1,6 +1,6 @@
 cask "local-ai-cat" do
   version "1.2.24"
-  sha256 "be4c0041953f636393f9680013379646a790958443fbd4c92957eacedfbd5c73"
+  sha256 "647afc69924d26c83afe81119d4a37f3ccf5eef9ff70aeec8762f32d0922598e"
 
   url "https://github.com/local-ai-cat/localaicat-site/releases/download/v#{version}/LocalAIChatDirect-#{version}.dmg"
   name "Local AI Cat"
