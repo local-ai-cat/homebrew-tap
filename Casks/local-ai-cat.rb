@@ -1,14 +1,14 @@
 cask "local-ai-cat" do
-  version "1.2.30"
-  sha256 "e46eebc5bbc62146d047c8e760159d3985661fd367b80ecfc5df711a288a0d4e"
+  version "1.2.31,146"
+  sha256 "28f97967128fc768cefbcefc3aa6c9856980712adcfa1dbabcc36d5c9542b249"
 
-  url "https://github.com/local-ai-cat/localaicat-site/releases/download/v#{version}/LocalAIChatDirect-#{version}.dmg"
+  url "https://github.com/local-ai-cat/localaicat-site/releases/download/v#{version.before_comma}/LocalAIChatDirect-#{version.before_comma}.dmg"
   name "Local AI Cat"
   desc "Private, on-device AI chat and transcription. No cloud required."
   homepage "https://localaicat.com"
 
   livecheck do
-    url "https://github.com/local-ai-cat/localaicat-site/releases/latest"
+    url "https://github.com/local-ai-cat/localaicat-site/releases/download/v#{version.before_comma}/LocalAIChatDirect-#{version.before_comma}.dmg"
     strategy :github_latest
   end
 
